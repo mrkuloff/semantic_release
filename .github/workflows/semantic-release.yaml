@@ -27,11 +27,6 @@ jobs:
         id: semantic
         with:
           semantic_version: 25.0.1
-          extra_plugins: |
-            @semantic-release/github
-            @semantic-release/commit-analyzer
-            @semantic-release/release-notes-generator
-            @semantic-release/git
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
